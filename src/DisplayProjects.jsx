@@ -4,7 +4,9 @@ const DisplayProjects = ({projects}) => {
     return(
         <>
         {projects.map((project) => {
-            return <li key={project.id} className="project">
+            return <li onClick={() => {
+              window.open(project.url_preview)
+            }} key={project.id} className="project">
             <img src={project.img} alt="Project photo" />
             <div className="project-content">
               <h2>{project.name} <span className="project-links">
@@ -18,6 +20,11 @@ const DisplayProjects = ({projects}) => {
               </a>
             </span>
             </h2>
+            {project.isFullstack ? 
+            <h4>Might take some time to load, becase of the free backend hosting</h4>
+            :
+            null
+            }
             <p>{project.description}</p>
             </div>
           </li>

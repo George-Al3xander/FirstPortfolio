@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 :root {
     --clr-primary:  deepskyblue;  
     --clr-accent: 	snow;
 
-    --ff-accent: 'Playfair Display', serif;
+    --ff-accent: 'Roboto Condensed', sans-serif;
     --ff-primary:  'Roboto', sans-serif;
 
     --fs-default: 1rem;
@@ -167,6 +169,48 @@ svg:hover, .project:hover {
 
 .project:hover {
     scale: 1.1;
+}
+
+h4 {
+   font-size: .8rem;
+   margin-bottom: .5rem;
+   color: 	goldenrod;
+   font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.skills {
+    list-style-type: none;
+    display: flex;
+    text-align: center;    
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 5%;
+    flex-wrap: wrap;
+}
+
+.skills h2 {
+    font-size: var(--fs-big);
+    
+}
+
+.skills li {
+    align-items: center;
+    display: flex;   
+}
+
+
+
+.skills svg {
+    width: initial;
+    height: initial;
+    max-width: 5rem;
+   
+    
+}
+
+.skills svg:hover {
+    scale: 1;
 }
 
 @media (max-width: 38.125rem) {
