@@ -45,7 +45,7 @@ function App() {
       </div>
       <div className='container'>
         <h1>My work</h1>
-        {projects.length > 0 ? <DisplayProjects projects={projects} />  : null}   
+        {projects.length > 0 ? <DisplayProjects projects={projects} />  : null}  
                
       </div>
       

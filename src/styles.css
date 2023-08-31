@@ -269,8 +269,15 @@ h4 {
 .footer-svg {
     fill: white;
 }
+.footer-avatar {
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
 
 @media (max-width: 38.125rem) {
+    .footer-avatar {
+        display: none;
+    }
     .split {
         flex-direction: column;
     }
