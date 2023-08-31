@@ -2,7 +2,7 @@ import React from "react";
 
 const DisplayProjects = ({projects}) => {
     return(
-        <>
+        <ul className="projects">
         {projects.map((project) => {
             return <li onClick={() => {
               window.open(project.url_preview)
@@ -29,7 +29,7 @@ const DisplayProjects = ({projects}) => {
             </div>
           </li>
         })}
-        </>
+        </ul>
     )
 }
 
